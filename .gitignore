@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.tmp/
+
+# Build reports and caches
+webpack.statistics.prod.html
+coverage/
+*.log
+
+# IDE and OS
+.vscode/
+.DS_Store
+Thumbs.db
+

@@ -1,0 +1,202 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Category Data",
+            "name": "category",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Primary Measure (fallback)",
+            "name": "measure",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Senhas Retiradas",
+            "name": "senhasRet",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Senhas Atendidas",
+            "name": "senhasAte",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Volume Abandonado",
+            "name": "volAbn",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "% Abandono",
+            "name": "pctAbn",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "% Overlay",
+            "name": "pctOver",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "SLA 10min",
+            "name": "sla10",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "TME",
+            "name": "tme",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "TMA",
+            "name": "tma",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "FTE Medio",
+            "name": "fteMed",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "% Ocupacao",
+            "name": "taxaOcp",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "% Aderencia",
+            "name": "aderencia",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "table": {
+            "properties": {
+                "headerBackground": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "rowAlternateBackground": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "selectedRowBackground": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "showGridLines": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontSize": {
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                }
+            }
+        },
+        "tooltips": {
+            "properties": {
+                "enabled": {
+                    "type": {
+                        "bool": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "category"
+                    },
+                    "dataReductionAlgorithm": {
+                        "top": {}
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "measure"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "senhasRet"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "senhasAte"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "volAbn"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "pctAbn"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "pctOver"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "sla10"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "tme"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "tma"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "fteMed"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "taxaOcp"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "aderencia"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "privileges": []
+}
