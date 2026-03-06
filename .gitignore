@@ -6,6 +6,10 @@ webpack.statistics.prod.html
 coverage/
 *.log
 
+# Ensure packaged visual artifacts are included
+!dist/
+!dist/**
+
 # IDE and OS
 .vscode/
 .DS_Store
